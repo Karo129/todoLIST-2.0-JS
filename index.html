@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-   
-
-
+    <main class="todo">
+        <header class="header">
+            <h1>todos</h1>
+            <input type="text" class="new-todo" placeholder="What needs to be done?">
+        </header>
+        <section class="section">
+            <!-- <input id="toggle-all" class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label> -->
+            <ul class="todo-list"></ul>
+        </section>
+        <footer class="footer">
+            <span class="todos-counter"></span>
+            <div class="options">
+                <a href="#/" class="selected">All</a>
+                <a href="#/active">Active</a>
+                <a href="#/completed">Completed</a>
+            </div>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
