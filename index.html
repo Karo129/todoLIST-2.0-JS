@@ -9,22 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/30316f3f3b.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <header class="header">
+        <h1>todos</h1>
+    </header>
     <main class="todo">
-        <header class="header">
-            <h1>todos</h1>
-            <input type="text" class="new-todo" placeholder="What needs to be done?">
-        </header>
         <section class="section">
+            <input type="text" class="new-todo" placeholder="What needs to be done?">
             <!-- <input id="toggle-all" class="toggle-all" type="checkbox">
             <label for="toggle-all">Mark all as complete</label> -->
-            <ul class="todo-list"></ul>
+            <ul class="todo-list">
+                <li>first task</li>
+                <li>second task</li>
+            </ul>
         </section>
         <footer class="footer">
-            <span class="todos-counter"></span>
+            <span class="todos-counter">1 item left</span>
             <div class="options">
                 <a href="#/" class="selected">All</a>
                 <a href="#/active">Active</a>
