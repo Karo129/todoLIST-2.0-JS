@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/30316f3f3b.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -20,24 +19,26 @@
     </header>
     <main class="todo">
         <section class="section">
+            <i class="fa-solid fa-chevron-down" onclick="toggleAll()"></i>
             <input type="text" class="new-todo" placeholder="What needs to be done?">
-            <!-- <input id="toggle-all" class="toggle-all" type="checkbox">
-            <label for="toggle-all">Mark all as complete</label> -->
-            <ul class="todo-list">
-                <li>first task</li>
-                <li>second task</li>
-            </ul>
         </section>
-        <footer class="footer">
-            <span class="todos-counter">1 item left</span>
-            <div class="options">
-                <a href="#/" class="selected">All</a>
-                <a href="#/active">Active</a>
-                <a href="#/completed">Completed</a>
-            </div>
-            <button class="clear-completed">Clear completed</button>
-        </footer>
+        <section class="section-main">
+            <ul class="todo-list">
+            </ul>
+            <footer class="footer">
+                <span class="counter"></span>
+                <div class="options">
+                    <a href="#/" class="selected" onclick="showAll()">All</a>
+                    <a href="#/active" onclick="showActive()">Active</a>
+                    <a href="#/completed" onclick="showCompleted()">Completed</a>
+                </div>
+                <button class="clear-completed" onclick="clearAll()">Clear completed</button>
+            </footer>
+        </section>
     </main>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 
