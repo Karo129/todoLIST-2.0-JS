@@ -71,6 +71,10 @@ body {
 	padding: 0.8em;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 .todo-list li {
 	display: flex;
 	flex-direction: row;

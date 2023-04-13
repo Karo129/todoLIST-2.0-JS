@@ -1,6 +1,9 @@
 let newTodo = document.querySelector('.todo-list')
 let count = document.querySelector('.counter')
 let todos = []
+let toggleButton = document.querySelector('.toggleButton');
+
+toggleButton.classList.add('hidden');
 
 function addTodo() {
 	let newItem = document.querySelector('.new-todo').value
@@ -13,6 +16,7 @@ function addTodo() {
 		})
 		displayList()
 		document.querySelector('.new-todo').value = ''
+		toggleButton.classList.remove('hidden');
 	}
 }
 
@@ -49,7 +53,8 @@ function clearAll() {
 
 function displayList() {
 	newTodo.innerHTML = ''
-	count.innerText = todos.filter(todo => !todo.done).length + ' ' + 'items left'
+	count.innerText = todos.filter(todo => !todo.done).length + ' ' + 'items left';
+	
 
 	for (let i = 0; i < todos.length; i++) {
 		let li = document.createElement('li')
